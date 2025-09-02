@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- index.html  21 Nov 2019 03:44:50 GMT -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Otika - Admin Dashboard Template</title>
+    <link rel="stylesheet" href="assets/css/app.min.css">
+    <link rel="stylesheet" href="assets/bundles/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="assets/bundles/owlcarousel2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/bundles/owlcarousel2/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/bundles/summernote/summernote-bs4.css">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <!-- Custom style CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/Customs.css">
+    <link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.ico' />
+    
+<style type="text/css">
+    .userccount p {
+        text-align: left !important;
+
+    }
+
+    /* Normal state */
+    .btn1 {
+        background-color: #0400ff;
+        color: #ffffff;
+        padding: 10px 18px;
+        border-radius: 5px;
+        border: none;
+        transition: all 0.3s ease;
+        width: 100%;
+        height: 40px;
+    }
+
+    /* Hover state */
+    .btn1:hover {
+        background-color: black;
+        color: white;
+    }
+</style>
+</head>
+
+
+
+
+
+<body>
+    <div class="loader"></div>
+    <div id="app">
+        <div class="main-wrapper main-wrapper-1">
+            <div class="navbar-bg"></div>
+            <nav class="navbar navbar-expand-lg main-navbar sticky">
+                <div class="form-inline mr-auto">
+                    <ul class="navbar-nav mr-3">
+                        <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg
+									collapse-btn"> <i data-feather="align-justify"></i></a></li>
+                        <li><a href="#" class="nav-link nav-link-lg fullscreen-btn">
+                                <i data-feather="maximize"></i>
+                            </a></li>
+                        <li>
+                            <form class="form-inline mr-auto">
+                                <div class="search-element">
+                                    <input class="form-control" type="search" placeholder="Search" aria-label="Search"
+                                        data-width="200">
+                                    <button class="btn" type="submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav navbar-right">
+                    <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
+                            class="nav-link nav-link-lg message-toggle"><i data-feather="mail"></i>
+                            <span class="badge headerBadge1">
+                                6 </span> </a>
+                        <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
+                            <div class="dropdown-header">
+                                Messages
+                                <div class="float-right">
+                                    <a href="#">Mark All As Read</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-list-content dropdown-list-message">
+                                <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar
+											text-white"> <img alt="image" src="assets/img/users/user-1.png" class="rounded-circle">
+                                    </span> <span class="dropdown-item-desc"> <span class="message-user">John
+                                            Deo</span>
+                                        <span class="time messege-text">Please check your mail !!</span>
+                                        <span class="time">2 Min Ago</span>
+                                    </span>
+                                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                                        <img alt="image" src="assets/img/users/user-2.png" class="rounded-circle">
+                                    </span> <span class="dropdown-item-desc"> <span class="message-user">Sarah
+                                            Smith</span> <span class="time messege-text">Request for leave
+                                            application</span>
+                                        <span class="time">5 Min Ago</span>
+                                    </span>
+                                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                                        <img alt="image" src="assets/img/users/user-5.png" class="rounded-circle">
+                                    </span> <span class="dropdown-item-desc"> <span class="message-user">Jacob
+                                            Ryan</span> <span class="time messege-text">Your payment invoice is
+                                            generated.</span> <span class="time">12 Min Ago</span>
+                                    </span>
+                                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                                        <img alt="image" src="assets/img/users/user-4.png" class="rounded-circle">
+                                    </span> <span class="dropdown-item-desc"> <span class="message-user">Lina
+                                            Smith</span> <span class="time messege-text">hii John, I have upload
+                                            doc
+                                            related to task.</span> <span class="time">30
+                                            Min Ago</span>
+                                    </span>
+                                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                                        <img alt="image" src="assets/img/users/user-3.png" class="rounded-circle">
+                                    </span> <span class="dropdown-item-desc"> <span class="message-user">Jalpa
+                                            Joshi</span> <span class="time messege-text">Please do as specify.
+                                            Let me
+                                            know if you have any query.</span> <span class="time">1
+                                            Days Ago</span>
+                                    </span>
+                                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                                        <img alt="image" src="assets/img/users/user-2.png" class="rounded-circle">
+                                    </span> <span class="dropdown-item-desc"> <span class="message-user">Sarah
+                                            Smith</span> <span class="time messege-text">Client Requirements</span>
+                                        <span class="time">2 Days Ago</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="dropdown-footer text-center">
+                                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
+                            class="nav-link notification-toggle nav-link-lg"><i data-feather="bell" class="bell"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
+                            <div class="dropdown-header">
+                                Notifications
+                                <div class="float-right">
+                                    <a href="#">Mark All As Read</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-list-content dropdown-list-icons">
+                                <a href="#" class="dropdown-item dropdown-item-unread"> <span
+                                        class="dropdown-item-icon bg-primary text-white"> <i class="fas
+												fa-code"></i>
+                                    </span> <span class="dropdown-item-desc"> Template update is
+                                        available now! <span class="time">2 Min
+                                            Ago</span>
+                                    </span>
+                                </a> <a href="#" class="dropdown-item"> <span
+                                        class="dropdown-item-icon bg-info text-white"> <i class="far
+												fa-user"></i>
+                                    </span> <span class="dropdown-item-desc"> <b>You</b> and <b>Dedik
+                                            Sugiharto</b> are now friends <span class="time">10 Hours
+                                            Ago</span>
+                                    </span>
+                                </a> <a href="#" class="dropdown-item"> <span
+                                        class="dropdown-item-icon bg-success text-white"> <i class="fas
+												fa-check"></i>
+                                    </span> <span class="dropdown-item-desc"> <b>Kusnaedi</b> has
+                                        moved task <b>Fix bug header</b> to <b>Done</b> <span class="time">12
+                                            Hours
+                                            Ago</span>
+                                    </span>
+                                </a> <a href="#" class="dropdown-item"> <span
+                                        class="dropdown-item-icon bg-danger text-white"> <i
+                                            class="fas fa-exclamation-triangle"></i>
+                                    </span> <span class="dropdown-item-desc"> Low disk space. Let's
+                                        clean it! <span class="time">17 Hours Ago</span>
+                                    </span>
+                                </a> <a href="#" class="dropdown-item"> <span
+                                        class="dropdown-item-icon bg-info text-white"> <i class="fas
+												fa-bell"></i>
+                                    </span> <span class="dropdown-item-desc"> Welcome to Otika
+                                        template! <span class="time">Yesterday</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="dropdown-footer text-center">
+                                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown"><a href="#" data-toggle="dropdown"
+                            class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image"
+                                src="assets/img/user.png" class="user-img-radious-style"> <span
+                                class="d-sm-none d-lg-inline-block"></span></a>
+                        <div class="dropdown-menu dropdown-menu-right pullDown">
+                            <div class="dropdown-title">Hello Sarah Smith</div>
+                            <a href="profile.html" class="dropdown-item has-icon"> <i class="far
+										fa-user"></i> Profile
+                            </a> <a href="timeline.html" class="dropdown-item has-icon"> <i class="fas fa-bolt"></i>
+                                Activities
+                            </a> <a href="#" class="dropdown-item has-icon"> <i class="fas fa-cog"></i>
+                                Settings
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="auth-login.html" class="dropdown-item has-icon text-danger"> <i
+                                    class="fas fa-sign-out-alt"></i>
+                                Logout
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+           <div class="main-sidebar sidebar-style-2">
+                <aside id="sidebar-wrapper">
+                    <div class="sidebar-brand">
+                        <a href="index.html"> <img alt="image" src="assets/img/logo.png" class="header-logo" /> <span
+                                class="logo-name">Otika</span>
+                        </a>
+                    </div>
+                    <ul class="sidebar-menu">
+                        <li class="menu-header">Main</li>
+                        <li class="dropdown active">
+                            <a href="index.html" class="nav-link"><i
+                                    data-feather="monitor"></i><span>Dashboard</span></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i
+                                    data-feather="briefcase"></i><span>Admin
+                                    Users</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./AdminUsers.html">List All Admin Users</a></li>
+                                <li><a class="nav-link" href="./addNewadmin.html">Add Admin Users</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i
+                                    data-feather="command"></i><span>Jobs</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./manageJobs.html">Manage Jobs</a></li>
+                                <li><a class="nav-link" href="./ImportJobs.html">Import Jobs</a></li>
+                                <li><a class="nav-link" href="./importTool.html">ImportTool</a></li>
+                                <li><a class="nav-link" href="./ImportjobsForn.html">Import Jobs Form</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Companies</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./manageCompany.html">Manage Companies</a></li>
+                                <li><a class="nav-link" href="./managecompanyForm.html">Add Company</a></li>
+                                <li><a class="nav-link" href="./editCompany.html">Edit Company</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Content
+                                    page</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./content_list.html">Manage content page</a></li>
+                                <li><a class="nav-link" href="./content_form.html">Manage content form</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    SEO</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./SEO_table.html">SEO page list</a></li>
+                                <li><a class="nav-link" href="./SEO_form.html">SEO form</a></li>
+                            </ul>
+                        </li>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    FAQs</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./FAQ_table.html">FAQ list</a></li>
+                                <li><a class="nav-link" href="./FAQ_form.html">FAQ form</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Blogs</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./Blog_table.html">All Blogs</a></li>
+                                <li><a class="nav-link" href="./Blog_form.html">Edit Blogs</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Testimonial</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./manage_testimonial.html">Testimonial List</a></li>
+                                <li><a class="nav-link" href="./Testimonial_form.html">Add new Testimonial</a></li>
+                            </ul>
+                        </li>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Site Language</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./manage_site_langauge.html"> Site Language</a></li>
+                                <!-- <li><a class="nav-link" href="./Testimonial_form.html">Add new Testimonial</a></li> -->
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Location</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./manage_location.html">Manage Location</a></li>
+                                <li><a class="nav-link" href="./manage_location_form.html">Add new Location</a></li>
+                                <li><a class="nav-link" href="./counteries.html">All Counteries</a></li>
+                                <li><a class="nav-link" href="./counteries_detail_form.html">Counteries Details</a></li>
+                                <li><a class="nav-link" href="./state_datatable.html">State</a></li>
+                                <li><a class="nav-link" href="./cities_table.html">Cities</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Employer Package</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./Manage Employer Package.html">Manage Employer
+                                        Package</a></li>
+                                <li><a class="nav-link" href="./ManagEmployerPackage_form.html">Add Employer Package</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Seeker</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./manageSeeker.html">Manage Seeker Package</a></li>
+                                <li><a class="nav-link" href="./manageSeekerPackageForm.html">Add the seeker package</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Job Attribute</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./manageJobAttribute.html">Manage Jobs Attribute</a></li>
+                                <li><a class="nav-link" href="./jobAttribute Form.html">Add the new jobs Attribute</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Language Level</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./ListLanguageLevel.html">List of language level</a></li>
+                                <li><a class="nav-link" href="./ListLanguageForm.html">Add the language level</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Career Level</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./CareerLevel.html">List of Career level</a></li>
+                                <li><a class="nav-link" href="./ListLanguageForm.html">Add the Career level</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Functional Areas</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./FunctionalAreas.html">Functional Areas</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Gender</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./Gender.html">Gender</a></li>
+                                <li><a class="nav-link" href="./editGender.html">Edit the gender</a></li>
+                            </ul>
+                        </li>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Industry</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./Industry.html">Industry</a></li>
+                                <li><a class="nav-link" href="./AddnewIndusryform.html">Add new Industry</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Job Experience</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./jobExperience.html">Job Experience</a></li>
+                                <li><a class="nav-link" href="./AddNewjobExperience.html">Add new Job Experience</a>
+                                </li>
+                            </ul>
+                        </li>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Job Skill</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./JobSkills.html">Job Skill</a></li>
+                                <li><a class="nav-link" href="./JobsSkillForm.html">Add new Job Experience</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Job Tittle</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./JobTitle.html">Job Tittle</a></li>
+                                <li><a class="nav-link" href="./addnewjobTitle.html">Add new Jobs Tittle</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Job Types</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./JobsTypes.html">Job Types</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Job Shifts</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./JobShift.html">Job Shift</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Degree Level</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./DegreeLevel.html">Degree Level</a></li>
+                            </ul>
+                        </li>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Degree Types</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./DegreeTypes.html">Degree Types</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Degree Sunjects</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./MajorSubjects.html">Major Subjects</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Results Grade</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./ResultGrade.html">Result Grade</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Martial Status</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./MartialStatus.html">Martial Status</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Ownership Type</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./OwnerShipTypes.html">Ownership Types</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>
+                                    Salary Periods</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="./salaryPeriod.html">Salary Periods</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            <!-- Main Content -->
+            <div class="main-content">
+                <section class="section">
+                    <div class="section-body">
+                        <!-- add content here -->
+                        <!-- Personal Information -->
+                        <!-- Personal Information -->
+                        <h5>Job Details</h5>
+                        <form method="POST"
+                            action=""
+                            accept-charset="UTF-8" class="form"><input name="_token" type="hidden"
+                                value="HmbWBIt1dbfdyve9yXAnvJiW636QuLsC5vGcLS1L">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="formrow "> <input class="form-control" id="title"
+                                            placeholder="Job title" name="title" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-3">
+                                    <div class="formrow ">
+                                        <label for="" class="pb-2">Description</label>
+                                                     <textarea
+                                                    class="form-control summernote-simple">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur voluptatum alias molestias minus quod dignissimos.</textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 ">
+                                    <div class="formrow ">
+                                        <label for="" class="pb-2">Benefits</label>
+                                                       <textarea
+                                                    class="form-control summernote-simple">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur voluptatum alias molestias minus quod dignissimos.</textarea>
+                                    </div>
+                                </div>
+
+
+                               
+                                <div class="col-md-4 ">
+                                    <div class="formrow " id="country_id_div"> <select class="form-control"
+                                            id="country_id" name="country_id">
+                                            <option value="">Select Country</option>
+                                            <option value="1">Afghanistan</option>
+                                            <option value="2">Albania</option>
+                                            <option value="3">Algeria</option>
+                                            <option value="4">American Samoa</option>
+                                            <option value="5">Andorra</option>
+                                            <option value="6">Angola</option>
+                                            <option value="7">Anguilla</option>
+                                            <option value="8">Antarctica</option>
+                                            <option value="9">Antigua And Barbuda</option>
+                                            <option value="10">Argentina</option>
+                                            <option value="11">Armenia</option>
+                                            <option value="12">Aruba</option>
+                                            <option value="13">Australia</option>
+                                            <option value="14">Austria</option>
+                                            <option value="15">Azerbaijan</option>
+                                            <option value="16">Bahamas The</option>
+                                            <option value="17">Bahrain</option>
+                                            <option value="18">Bangladesh</option>
+                                            <option value="19">Barbados</option>
+                                            <option value="20">Belarus</option>
+                                            <option value="21">Belgium</option>
+                                            <option value="22">Belize</option>
+                                            <option value="23">Benin</option>
+                                            <option value="24">Bermuda</option>
+                                            <option value="25">Bhutan</option>
+                                            <option value="26">Bolivia</option>
+                                            <option value="27">Bosnia and Herzegovina</option>
+                                            <option value="28">Botswana</option>
+                                            <option value="29">Bouvet Island</option>
+                                            <option value="30">Brazil</option>
+                                            <option value="31">British Indian Ocean Territory</option>
+                                            <option value="32">Brunei</option>
+                                            <option value="33">Bulgaria</option>
+                                            <option value="34">Burkina Faso</option>
+                                            <option value="35">Burundi</option>
+                                            <option value="36">Cambodia</option>
+                                            <option value="37">Cameroon</option>
+                                            <option value="38">Canada</option>
+                                            <option value="39">Cape Verde</option>
+                                            <option value="40">Cayman Islands</option>
+                                            <option value="41">Central African Republic</option>
+                                            <option value="42">Chad</option>
+                                            <option value="43">Chile</option>
+                                            <option value="44">China</option>
+                                            <option value="45">Christmas Island</option>
+                                            <option value="46">Cocos (Keeling) Islands</option>
+                                            <option value="47">Colombia</option>
+                                            <option value="48">Comoros</option>
+                                            <option value="49">Republic Of The Congo</option>
+                                            <option value="50">Democratic Republic Of The Congo</option>
+                                            <option value="51">Cook Islands</option>
+                                            <option value="52">Costa Rica</option>
+                                            <option value="53">Cote D&#039;Ivoire (Ivory Coast)</option>
+                                            <option value="54">Croatia (Hrvatska)</option>
+                                            <option value="55">Cuba</option>
+                                            <option value="56">Cyprus</option>
+                                            <option value="57">Czech Republic</option>
+                                            <option value="58">Denmark</option>
+                                            <option value="59">Djibouti</option>
+                                            <option value="60">Dominica</option>
+                                            <option value="61">Dominican Republic</option>
+                                            <option value="62">East Timor</option>
+                                            <option value="63">Ecuador</option>
+                                            <option value="64">Egypt</option>
+                                            <option value="65">El Salvador</option>
+                                            <option value="66">Equatorial Guinea</option>
+                                            <option value="67">Eritrea</option>
+                                            <option value="68">Estonia</option>
+                                            <option value="69">Ethiopia</option>
+                                            <option value="70">External Territories of Australia</option>
+                                            <option value="71">Falkland Islands</option>
+                                            <option value="72">Faroe Islands</option>
+                                            <option value="73">Fiji Islands</option>
+                                            <option value="74">Finland</option>
+                                            <option value="75">France</option>
+                                            <option value="76">French Guiana</option>
+                                            <option value="77">French Polynesia</option>
+                                            <option value="78">French Southern Territories</option>
+                                            <option value="79">Gabon</option>
+                                            <option value="80">Gambia The</option>
+                                            <option value="81">Georgia</option>
+                                            <option value="82">Germany</option>
+                                            <option value="83">Ghana</option>
+                                            <option value="84">Gibraltar</option>
+                                            <option value="85">Greece</option>
+                                            <option value="86">Greenland</option>
+                                            <option value="87">Grenada</option>
+                                            <option value="88">Guadeloupe</option>
+                                            <option value="89">Guam</option>
+                                            <option value="90">Guatemala</option>
+                                            <option value="91">Guernsey and Alderney</option>
+                                            <option value="92">Guinea</option>
+                                            <option value="93">Guinea-Bissau</option>
+                                            <option value="94">Guyana</option>
+                                            <option value="95">Haiti</option>
+                                            <option value="96">Heard and McDonald Islands</option>
+                                            <option value="97">Honduras</option>
+                                            <option value="98">Hong Kong S.A.R.</option>
+                                            <option value="99">Hungary</option>
+                                            <option value="100">Iceland</option>
+                                            <option value="101">India</option>
+                                            <option value="102">Indonesia</option>
+                                            <option value="103">Iran</option>
+                                            <option value="104">Iraq</option>
+                                            <option value="105">Ireland</option>
+                                            <option value="106">Israel</option>
+                                            <option value="107">Italy</option>
+                                            <option value="108">Jamaica</option>
+                                            <option value="109">Japan</option>
+                                            <option value="110">Jersey</option>
+                                            <option value="111">Jordan</option>
+                                            <option value="112">Kazakhstan</option>
+                                            <option value="113">Kenya</option>
+                                            <option value="114">Kiribati</option>
+                                            <option value="115">Korea North</option>
+                                            <option value="116">Korea South</option>
+                                            <option value="117">Kuwait</option>
+                                            <option value="118">Kyrgyzstan</option>
+                                            <option value="119">Laos</option>
+                                            <option value="120">Latvia</option>
+                                            <option value="121">Lebanon</option>
+                                            <option value="122">Lesotho</option>
+                                            <option value="123">Liberia</option>
+                                            <option value="124">Libya</option>
+                                            <option value="125">Liechtenstein</option>
+                                            <option value="126">Lithuania</option>
+                                            <option value="127">Luxembourg</option>
+                                            <option value="128">Macau S.A.R.</option>
+                                            <option value="129">Macedonia</option>
+                                            <option value="130">Madagascar</option>
+                                            <option value="131">Malawi</option>
+                                            <option value="132">Malaysia</option>
+                                            <option value="133">Maldives</option>
+                                            <option value="134">Mali</option>
+                                            <option value="135">Malta</option>
+                                            <option value="136">Man (Isle of)</option>
+                                            <option value="137">Marshall Islands</option>
+                                            <option value="138">Martinique</option>
+                                            <option value="139">Mauritania</option>
+                                            <option value="140">Mauritius</option>
+                                            <option value="141">Mayotte</option>
+                                            <option value="142">Mexico</option>
+                                            <option value="143">Micronesia</option>
+                                            <option value="144">Moldova</option>
+                                            <option value="145">Monaco</option>
+                                            <option value="146">Mongolia</option>
+                                            <option value="147">Montserrat</option>
+                                            <option value="148">Morocco</option>
+                                            <option value="149">Mozambique</option>
+                                            <option value="150">Myanmar</option>
+                                            <option value="151">Namibia</option>
+                                            <option value="152">Nauru</option>
+                                            <option value="153">Nepal</option>
+                                            <option value="154">Netherlands Antilles</option>
+                                            <option value="155">Netherlands The</option>
+                                            <option value="156">New Caledonia</option>
+                                            <option value="157">New Zealand</option>
+                                            <option value="158">Nicaragua</option>
+                                            <option value="159">Niger</option>
+                                            <option value="160">Nigeria</option>
+                                            <option value="161">Niue</option>
+                                            <option value="162">Norfolk Island</option>
+                                            <option value="163">Northern Mariana Islands</option>
+                                            <option value="164">Norway</option>
+                                            <option value="165">Oman</option>
+                                            <option value="166">Pakistan</option>
+                                            <option value="167">Palau</option>
+                                            <option value="168">Palestinian Territory Occupied</option>
+                                            <option value="169">Panama</option>
+                                            <option value="170">Papua new Guinea</option>
+                                            <option value="171">Paraguay</option>
+                                            <option value="172">Peru</option>
+                                            <option value="173">Philippines</option>
+                                            <option value="174">Pitcairn Island</option>
+                                            <option value="175">Poland</option>
+                                            <option value="176">Portugal</option>
+                                            <option value="177">Puerto Rico</option>
+                                            <option value="178">Qatar</option>
+                                            <option value="179">Reunion</option>
+                                            <option value="180">Romania</option>
+                                            <option value="181">Russia</option>
+                                            <option value="182">Rwanda</option>
+                                            <option value="183">Saint Helena</option>
+                                            <option value="184">Saint Kitts And Nevis</option>
+                                            <option value="185">Saint Lucia</option>
+                                            <option value="186">Saint Pierre and Miquelon</option>
+                                            <option value="187">Saint Vincent And The Grenadines</option>
+                                            <option value="188">Samoa</option>
+                                            <option value="189">San Marino</option>
+                                            <option value="190">Sao Tome and Principe</option>
+                                            <option value="191">Saudi Arabia</option>
+                                            <option value="192">Senegal</option>
+                                            <option value="193">Serbia</option>
+                                            <option value="194">Seychelles</option>
+                                            <option value="195">Sierra Leone</option>
+                                            <option value="196">Singapore</option>
+                                            <option value="197">Slovakia</option>
+                                            <option value="198">Slovenia</option>
+                                            <option value="199">Smaller Territories of the UK</option>
+                                            <option value="200">Solomon Islands</option>
+                                            <option value="201">Somalia</option>
+                                            <option value="202">South Africa</option>
+                                            <option value="203">South Georgia</option>
+                                            <option value="204">South Sudan</option>
+                                            <option value="205">Spain</option>
+                                            <option value="206">Sri Lanka</option>
+                                            <option value="207">Sudan</option>
+                                            <option value="208">Suriname</option>
+                                            <option value="209">Svalbard And Jan Mayen Islands</option>
+                                            <option value="210">Swaziland</option>
+                                            <option value="211">Sweden</option>
+                                            <option value="212">Switzerland</option>
+                                            <option value="213">Syria</option>
+                                            <option value="214">Taiwan</option>
+                                            <option value="215">Tajikistan</option>
+                                            <option value="216">Tanzania</option>
+                                            <option value="217">Thailand</option>
+                                            <option value="218">Togo</option>
+                                            <option value="219">Tokelau</option>
+                                            <option value="220">Tonga</option>
+                                            <option value="221">Trinidad And Tobago</option>
+                                            <option value="222">Tunisia</option>
+                                            <option value="223">Turkey</option>
+                                            <option value="224">Turkmenistan</option>
+                                            <option value="225">Turks And Caicos Islands</option>
+                                            <option value="226">Tuvalu</option>
+                                            <option value="227">Uganda</option>
+                                            <option value="228">Ukraine</option>
+                                            <option value="229">United Arab Emirates</option>
+                                            <option value="230">United Kingdom</option>
+                                            <option value="231" selected="selected">United States of America</option>
+                                            <option value="232">United States Minor Outlying Islands</option>
+                                            <option value="233">Uruguay</option>
+                                            <option value="234">Uzbekistan</option>
+                                            <option value="235">Vanuatu</option>
+                                            <option value="236">Vatican City State (Holy See)</option>
+                                            <option value="237">Venezuela</option>
+                                            <option value="238">Vietnam</option>
+                                            <option value="239">Virgin Islands (British)</option>
+                                            <option value="240">Virgin Islands (US)</option>
+                                            <option value="241">Wallis And Futuna Islands</option>
+                                            <option value="242">Western Sahara</option>
+                                            <option value="243">Yemen</option>
+                                            <option value="244">Yugoslavia</option>
+                                            <option value="245">Zambia</option>
+                                            <option value="246">Zimbabwe</option>
+                                            <option value="990"></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="formrow " id="state_id_div"> <span id="default_state_dd"> <select
+                                                class="form-control" id="state_id" name="state_id">
+                                                <option value="" selected="selected">Select State</option>
+                                            </select> </span> </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="formrow " id="city_id_div"> <span id="default_city_dd"> <select
+                                                class="form-control" id="city_id" name="city_id">
+                                                <option value="" selected="selected">Select City</option>
+                                            </select> </span> </div>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <div class="formrow " id="salary_from_div"> <input class="form-control"
+                                            id="salary_from" placeholder="Salary from" name="salary_from" type="number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <div class="formrow " id="salary_to_div">
+                                        <input class="form-control" id="salary_to" placeholder="Salary to"
+                                            name="salary_to" type="number">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mt-3">
+                                    <div class="formrow " id="salary_currency_div">
+
+                                        <select class="form-control" id="salary_currency" name="salary_currency">
+                                            <option value="">Select Salary Currency</option>
+                                            <option value="£">SYP (£)</option>
+                                            <option value="$">USD ($)</option>
+                                            <option value="€">EUR (€)</option>
+                                            <option value="د.إ">AED (د.إ)</option>
+                                            <option value="؋">AF (؋)</option>
+                                            <option value="Lek">ALL (Lek)</option>
+                                            <option value="ƒ">AWG (ƒ)</option>
+                                            <option value="ман">AZ (ман)</option>
+                                            <option value="KM">BAM (KM)</option>
+                                            <option value="лв">UZS (лв)</option>
+                                            <option value="$b">BOB ($b)</option>
+                                            <option value="R$">BRL (R$)</option>
+                                            <option value="P">BWP (P)</option>
+                                            <option value="p.">BYR (p.)</option>
+                                            <option value="CHF">CHF (CHF)</option>
+                                            <option value="¥">JPY (¥)</option>
+                                            <option value="₡">CRC (₡)</option>
+                                            <option value="₱">CUP (₱)</option>
+                                            <option value="Kč">CZK (Kč)</option>
+                                            <option value="kr">SEK (kr)</option>
+                                            <option value="RD$">DOP (RD$)</option>
+                                            <option value="¢">GHC (¢)</option>
+                                            <option value="Q">GTQ (Q)</option>
+                                            <option value="L">HNL (L)</option>
+                                            <option value="Ft">HUF (Ft)</option>
+                                            <option value="Rp">INR (Rp)</option>
+                                            <option value="₪">ILS (₪)</option>
+                                            <option value="﷼">YER (﷼)</option>
+                                            <option value="J$">JMD (J$)</option>
+                                            <option value="៛">KHR (៛)</option>
+                                            <option value="₭">LAK (₭)</option>
+                                            <option value="₨">SCR (₨)</option>
+                                            <option value="Lt">LTL (Lt)</option>
+                                            <option value="Ls">LVL (Ls)</option>
+                                            <option value="ден">MKD (ден)</option>
+                                            <option value="₮">MNT (₮)</option>
+                                            <option value="RM">MYR (RM)</option>
+                                            <option value="MT">MZ (MT)</option>
+                                            <option value="₦">NG (₦)</option>
+                                            <option value="C$">NIO (C$)</option>
+                                            <option value="B/.">PAB (B/.)</option>
+                                            <option value="S/.">PE (S/.)</option>
+                                            <option value="Php">PHP (Php)</option>
+                                            <option value="zł">PL (zł)</option>
+                                            <option value="Gs">PYG (Gs)</option>
+                                            <option value="lei">RO (lei)</option>
+                                            <option value="Дин.">RSD (Дин.)</option>
+                                            <option value="руб">RUB (руб)</option>
+                                            <option value="S">SOS (S)</option>
+                                            <option value="฿">THB (฿)</option>
+                                            <option value="TL">TRY (TL)</option>
+                                            <option value="TT$">TTD (TT$)</option>
+                                            <option value="NT$">TWD (NT$)</option>
+                                            <option value="₴">UAH (₴)</option>
+                                            <option value="$U">UYU ($U)</option>
+                                            <option value="Bs">VEF (Bs)</option>
+                                            <option value="₫">VND (₫)</option>
+                                            <option value="R">ZAR (R)</option>
+                                            <option value="Z$">ZWD (Z$)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mt-3">
+                                    <div class="formrow " id="salary_period_id_div"> <select class="form-control"
+                                            id="salary_period_id" name="salary_period_id">
+                                            <option value="" selected="selected">Select Salary Period</option>
+                                            <option value="3">Weekly</option>
+                                            <option value="1">Monthly</option>
+                                            <option value="2">Yearly</option>
+                                            <option value="5"></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mt-3">
+                                    <div class="formrow "> <label for="hide_salary" class="bold">Hide Salary?</label>
+                                        <div class="radio-list">
+                                            <label class="radio-inline">
+                                                <input id="hide_salary_yes" name="hide_salary" type="radio" value="1">
+                                                Yes </label>
+                                            <label class="radio-inline">
+                                                <input id="hide_salary_no" name="hide_salary" type="radio" value="0"
+                                                    checked=&quot;checked&quot;>
+                                                No </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <div class="formrow " id="career_level_id_div"> <select class="form-control"
+                                            id="career_level_id" name="career_level_id">
+                                            <option value="" selected="selected">Select Career level</option>
+                                            <option value="1">Department Head</option>
+                                            <option value="2">Entry Level</option>
+                                            <option value="3">Experienced Professional</option>
+                                            <option value="4">GM / CEO / Country Head / President</option>
+                                            <option value="5">Intern/Student</option>
+                                            <option value="23"></option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mt-3">
+                                    <div class="formrow " id="functional_area_id_div"> <select class="form-control"
+                                            id="functional_area_id" name="functional_area_id">
+                                            <option value="" selected="selected">Select Functional Area</option>
+                                            <option value="640">Other</option>
+                                            <option value="654"></option>
+                                            <option value="633">Information Technology</option>
+                                            <option value="634">Management and Manufacturing</option>
+                                            <option value="637">Engineering and Information Technology</option>
+                                            <option value="638">Health Care Provider</option>
+                                            <option value="636">Accounting/Auditing and Finance</option>
+                                            <option value="641">Administrative</option>
+                                            <option value="639">Sales and Business Development</option>
+                                            <option value="1">Accountant</option>
+                                            <option value="2">Accounts, Finance &amp; Financial Services</option>
+                                            <option value="3">Admin</option>
+                                            <option value="4">Admin Operation</option>
+                                            <option value="5">Administration</option>
+                                            <option value="6">Administration Clerical</option>
+                                            <option value="7">Advertising</option>
+                                            <option value="8">Advertising</option>
+                                            <option value="9">Advertisment</option>
+                                            <option value="10">Architects &amp; Construction</option>
+                                            <option value="11">Architecture</option>
+                                            <option value="12">Bank Operation</option>
+                                            <option value="13">Business Development</option>
+                                            <option value="14">Business Management</option>
+                                            <option value="15">Business Systems Analyst</option>
+                                            <option value="16">Clerical</option>
+                                            <option value="17">Client Services &amp; Customer Support</option>
+                                            <option value="18">Computer Hardware</option>
+                                            <option value="19">Computer Networking</option>
+                                            <option value="20">Consultant</option>
+                                            <option value="21">Content Writer</option>
+                                            <option value="22">Corporate Affairs</option>
+                                            <option value="23">Creative Design</option>
+                                            <option value="24">Creative Writer</option>
+                                            <option value="25">Customer Support</option>
+                                            <option value="26">Data Entry</option>
+                                            <option value="27">Data Entry Operator</option>
+                                            <option value="28">Database Administration (DBA)</option>
+                                            <option value="29">Development</option>
+                                            <option value="30">Distribution &amp; Logistics</option>
+                                            <option value="31">Education &amp; Training</option>
+                                            <option value="32">Electronics Technician</option>
+                                            <option value="33">Engineering</option>
+                                            <option value="34">Engineering Construction</option>
+                                            <option value="35">Executive Management</option>
+                                            <option value="36">Executive Secretary</option>
+                                            <option value="37">Field Operations</option>
+                                            <option value="38">Front Desk Clerk</option>
+                                            <option value="39">Front Desk Officer</option>
+                                            <option value="40">Graphic Design</option>
+                                            <option value="41">Hardware</option>
+                                            <option value="42">Health &amp; Medicine</option>
+                                            <option value="43">Health &amp; Safety</option>
+                                            <option value="44">Health Care</option>
+                                            <option value="45">Health Related</option>
+                                            <option value="46">Hotel Management</option>
+                                            <option value="47">Hotel/Restaurant Management</option>
+                                            <option value="48">HR</option>
+                                            <option value="49">Human Resources</option>
+                                            <option value="50">Import &amp; Export</option>
+                                            <option value="51">Industrial Production</option>
+                                            <option value="52">Installation &amp; Repair</option>
+                                            <option value="53">Interior Designers &amp; Architects</option>
+                                            <option value="54">Intern</option>
+                                            <option value="55">Internship</option>
+                                            <option value="56">Investment Operations</option>
+                                            <option value="57">IT Security</option>
+                                            <option value="58">IT Systems Analyst</option>
+                                            <option value="59">Legal &amp; Corporate Affairs</option>
+                                            <option value="60">Legal Affairs</option>
+                                            <option value="61">Legal Research</option>
+                                            <option value="62">Logistics &amp; Warehousing</option>
+                                            <option value="63">Maintenance/Repair</option>
+                                            <option value="64">Management Consulting</option>
+                                            <option value="65">Management Information System (MIS)</option>
+                                            <option value="66">Managerial</option>
+                                            <option value="67">Manufacturing</option>
+                                            <option value="68">Manufacturing &amp; Operations</option>
+                                            <option value="69">Marketing</option>
+                                            <option value="70">Marketing</option>
+                                            <option value="71">Media - Print &amp; Electronic</option>
+                                            <option value="72">Media &amp; Advertising</option>
+                                            <option value="73">Medical</option>
+                                            <option value="74">Medicine</option>
+                                            <option value="75">Merchandising</option>
+                                            <option value="76">Merchandising &amp; Product Management</option>
+                                            <option value="77">Monitoring &amp; Evaluation (M&amp;E)</option>
+                                            <option value="78">Network Administration</option>
+                                            <option value="79">Network Operation</option>
+                                            <option value="80">Online Advertising</option>
+                                            <option value="81">Online Marketing</option>
+                                            <option value="82">Operations</option>
+                                            <option value="83">Planning</option>
+                                            <option value="84">Planning &amp; Development</option>
+                                            <option value="85">PR</option>
+                                            <option value="86">Print Media</option>
+                                            <option value="87">Printing</option>
+                                            <option value="88">Procurement</option>
+                                            <option value="89">Product Developer</option>
+                                            <option value="90">Product Development</option>
+                                            <option value="91">Product Development</option>
+                                            <option value="92">Product Management</option>
+                                            <option value="93">Production</option>
+                                            <option value="94">Production &amp; Quality Control</option>
+                                            <option value="95">Project Management</option>
+                                            <option value="96">Project Management Consultant</option>
+                                            <option value="97">Public Relations</option>
+                                            <option value="98">QA</option>
+                                            <option value="99">QC</option>
+                                            <option value="100">Qualitative Research</option>
+                                            <option value="101">Quality Assurance (QA)</option>
+                                            <option value="102">Quality Control</option>
+                                            <option value="103">Quality Inspection</option>
+                                            <option value="104">Recruiting</option>
+                                            <option value="105">Recruitment</option>
+                                            <option value="106">Repair &amp; Overhaul</option>
+                                            <option value="107">Research &amp; Development (R&amp;D)</option>
+                                            <option value="108">Research &amp; Evaluation</option>
+                                            <option value="109">Research &amp; Fellowships</option>
+                                            <option value="110">Researcher</option>
+                                            <option value="111">Restaurant Management</option>
+                                            <option value="112">Retail</option>
+                                            <option value="113">Retail &amp; Wholesale</option>
+                                            <option value="114">Retail Buyer</option>
+                                            <option value="115">Retail Buying</option>
+                                            <option value="116">Retail Merchandising</option>
+                                            <option value="117">Safety &amp; Environment</option>
+                                            <option value="118">Sales</option>
+                                            <option value="119">Sales &amp; Business Development</option>
+                                            <option value="120">Sales Support</option>
+                                            <option value="121">Search Engine Optimization (SEO)</option>
+                                            <option value="122">Secretarial, Clerical &amp; Front Office</option>
+                                            <option value="123">Security</option>
+                                            <option value="124">Security &amp; Environment</option>
+                                            <option value="125">Security Guard</option>
+                                            <option value="126">SEM</option>
+                                            <option value="127">SMO</option>
+                                            <option value="128">Software &amp; Web Development</option>
+                                            <option value="129">Software Engineer</option>
+                                            <option value="130">Software Testing</option>
+                                            <option value="131">Stores &amp; Warehousing</option>
+                                            <option value="132">Supply Chain</option>
+                                            <option value="133">Supply Chain Management</option>
+                                            <option value="134">Systems Analyst</option>
+                                            <option value="135">Teachers/Education, Training &amp; Development</option>
+                                            <option value="136">Technical Writer</option>
+                                            <option value="137">Tele Sale Representative</option>
+                                            <option value="138">Telemarketing</option>
+                                            <option value="139">Training &amp; Development</option>
+                                            <option value="140">Transportation &amp; Warehousing</option>
+                                            <option value="141">TSR</option>
+                                            <option value="142">Typing</option>
+                                            <option value="143">Warehousing</option>
+                                            <option value="144">Web Developer</option>
+                                            <option value="145">Web Marketing</option>
+                                            <option value="146">Writer</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <div class="formrow " id="job_type_id_div"> <select class="form-control"
+                                            id="job_type_id" name="job_type_id">
+                                            <option value="" selected="selected">Select Job Type</option>
+                                            <option value="1">Contract</option>
+                                            <option value="2">Freelance</option>
+                                            <option value="3">Full Time/Permanent</option>
+                                            <option value="4">Internship</option>
+                                            <option value="5">Part Time</option>
+                                            <option value="26"></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <div class="formrow " id="job_shift_id_div"> <select class="form-control"
+                                            id="job_shift_id" name="job_shift_id">
+                                            <option value="" selected="selected">Select Job Shift</option>
+                                            <option value="1">First Shift (Day)</option>
+                                            <option value="2">Second Shift (Afternoon)</option>
+                                            <option value="3">Third Shift (Night)</option>
+                                            <option value="4">Rotating</option>
+                                            <option value="24"></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <div class="formrow " id="num_of_positions_div"> <select class="form-control"
+                                            id="num_of_positions" name="num_of_positions">
+                                            <option value="" selected="selected">Select number of Positions</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <div class="formrow " id="gender_id_div"> <select class="form-control"
+                                            id="gender_id" name="gender_id">
+                                            <option value="" selected="selected">No preference</option>
+                                            <option value="2">Male</option>
+                                            <option value="16">female</option>
+                                            <option value="15"></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <div class="formrow "> <input class="form-control datepicker" id="expiry_date"
+                                            placeholder="Job expiry date" autocomplete="off" name="expiry_date"
+                                            type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <div class="formrow " id="degree_level_id_div"> <select class="form-control"
+                                            id="degree_level_id" name="degree_level_id">
+                                            <option value="" selected="selected">Select Required Degree Level</option>
+                                            <option value="1">Non-Matriculation</option>
+                                            <option value="2">Matriculation/O-Level</option>
+                                            <option value="3">Intermediate/A-Level</option>
+                                            <option value="4">Bachelors</option>
+                                            <option value="5">Masters</option>
+                                            <option value="6">MPhil/MS</option>
+                                            <option value="7">PHD/Doctorate</option>
+                                            <option value="8">Certification</option>
+                                            <option value="9">Diploma</option>
+                                            <option value="10">Short Course</option>
+                                            <option value="41"></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <div class="formrow " id="job_experience_id_div"> <select class="form-control"
+                                            id="job_experience_id" name="job_experience_id">
+                                            <option value="" selected="selected">Select Required job experience</option>
+                                            <option value="11">Fresh</option>
+                                            <option value="12">Less Than 1 Year</option>
+                                            <option value="1">1 Year</option>
+                                            <option value="3">2 years</option>
+                                            <option value="4">3 years</option>
+                                            <option value="5">4 years</option>
+                                            <option value="6">5 years</option>
+                                            <option value="7">6 years</option>
+                                            <option value="8">7 years</option>
+                                            <option value="9">8 years</option>
+                                            <option value="10">9 years</option>
+                                            <option value="2">10 years</option>
+                                            <option value="52">11 years</option>
+                                            <option value="54">12 Years</option>
+                                            <option value="55">13 Years</option>
+                                            <option value="56">14 Years</option>
+                                            <option value="57">15 Years</option>
+                                            <option value="58">16 Years</option>
+                                            <option value="59">17 Years</option>
+                                            <option value="60">18 Years</option>
+                                            <option value="61">19 Years</option>
+                                            <option value="62">20 Years</option>
+                                            <option value="63">21 Years</option>
+                                            <option value="64">22 years</option>
+                                            <option value="65">23 years</option>
+                                            <option value="66">24 Years</option>
+                                            <option value="67">25 Years</option>
+                                            <option value="68">26 Years</option>
+                                            <option value="69">27 Years</option>
+                                            <option value="70">28 Years</option>
+                                            <option value="71">29 Years</option>
+                                            <option value="72">30 years</option>
+                                            <option value="73">31 Years</option>
+                                            <option value="74">32 Years</option>
+                                            <option value="75">33 Years</option>
+                                            <option value="76">34 Years</option>
+                                            <option value="77">35 Years</option>
+                                            <option value="78">36 Years</option>
+                                            <option value="79">37 Years</option>
+                                            <option value="80">38 Years</option>
+                                            <option value="81">39 Years</option>
+                                            <option value="82">40 Years</option>
+                                            <option value="83">41 Years</option>
+                                            <option value="84">42 Years</option>
+                                            <option value="85">43 Years</option>
+                                            <option value="86">44 Years</option>
+                                            <option value="87">45 Years</option>
+                                            <option value="88">46 Years</option>
+                                            <option value="89">47 Years</option>
+                                            <option value="90">48 Years</option>
+                                            <option value="91">49 Years</option>
+                                            <option value="92">50 Years</option>
+                                            <option value="93">51 Years</option>
+                                            <option value="94">52 Years</option>
+                                            <option value="95">53 Years</option>
+                                            <option value="96">54 Years</option>
+                                            <option value="97">55 Years</option>
+                                            <option value="98">56 Years</option>
+                                            <option value="99">57 Years</option>
+                                            <option value="100">58 Years</option>
+                                            <option value="101">59 Years</option>
+                                            <option value="102">60 Years</option>
+                                            <option value="103">61 Years</option>
+                                            <option value="104">62 Years</option>
+                                            <option value="105">63 Years</option>
+                                            <option value="106">64 Years</option>
+                                            <option value="107">65 Years</option>
+                                            <option value="108">66 Years</option>
+                                            <option value="109">67 Years</option>
+                                            <option value="110">68 Years</option>
+                                            <option value="111">70 Years</option>
+                                            <option value="112"></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <div class="formrow "> <label for="is_freelance" class="bold">Is Freelance?</label>
+                                        <div class="radio-list">
+                                            <label class="radio-inline">
+                                                <input id="is_freelance_yes" name="is_freelance" type="radio" value="1">
+                                                Yes </label>
+                                            <label class="radio-inline">
+                                                <input id="is_freelance_no" name="is_freelance" type="radio" value="0"
+                                                    checked=&quot;checked&quot;>
+                                                No </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="col-md-12 mt-3">
+                                    <div class="formrow">
+                                        <label for="external_job" class="bold">Is this External Job?</label>
+                                        <div class="radio-list">
+                                            <label class="radio-inline">
+                                                <input id="external" name="external_job" type="radio" value="yes">
+                                                Yes
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input id="not_external" name="external_job" type="radio" value="no"
+                                                    checked=&quot;checked&quot;>
+                                                No
+                                            </label>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <div id="externalLinkField" class="formrow" style="display: none">
+                                            <label for="job_link" class="bold">External Link</label>
+                                            <input class="form-control" name="job_link" type="text" value=""
+                                                id="job_link">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+
+
+
+
+    <div class="col-md-12">
+                                            <div class="formrow">
+                                                <button type="submit" class=" btn1">Submit the Jobs <i
+                                                        class="fa fa-arrow-circle-right"
+                                                        aria-hidden="true"></i></button>
+                                            </div>
+                                        </div>
+                            </div>
+                            <input type="file" name="image" id="image" style="display:none;" accept="image/*" />
+                        </form>
+                        <hr>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <footer class="main-footer">
+        <div class="footer-left">
+            <a href="templateshub.net">Templateshub</a></a>
+        </div>
+        <div class="footer-right">
+        </div>
+    </footer>
+    </div>
+    </div>
+    <!-- General JS Scripts -->
+    <!-- Core JS -->
+    <script src="assets/js/app.min.js"></script>
+
+    <!-- jQuery UI (before DataTables if needed) -->
+    <!-- <script src="assets/bundles/jquery-ui/jquery-ui.min.js"></script> -->
+
+
+    <!-- General JS Scripts -->
+    <script src="assets/js/app.min.js"></script>
+    <!-- JS Libraies -->
+    <script src="assets/bundles/chartjs/chart.min.js"></script>
+    <script src="assets/bundles/owlcarousel2/dist/owl.carousel.min.js"></script>
+    <script src="assets/bundles/summernote/summernote-bs4.js"></script>
+    <!-- Page Specific JS File -->
+    <script src="assets/js/page/widget-data.js"></script>
+    <!-- Template JS File -->
+    <script src="assets/js/scripts.js"></script>
+    <!-- Custom JS File -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+
+<!-- index.html  21 Nov 2019 03:47:04 GMT -->
+
+</html>
